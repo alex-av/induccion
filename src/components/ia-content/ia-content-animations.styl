@@ -1,0 +1,33 @@
+@keyframes aparecer
+    0%
+        opacity 0
+        transform translateX(2em)
+    100%
+        opacity 1
+        transform translateX(0em)
+
+@keyframes desaparecer
+    0%
+        opacity 1
+        transform translateX(0em)
+    
+    100%
+        opacity 0
+        transform translateX(2em)
+
+
+
+// Clases de animación
+//Variable local de duración de la animación 
+tiempo= 0.3s
+
+.aparecer
+    animation-name aparecer
+    animation-duration tiempo
+    animation-fill-mode forwards
+    animation-timing-function ease-in-out
+.desaparecer
+    animation-name desaparecer
+    animation-duration tiempo
+    animation-fill-mode forwards
+    animation-timing-function ease-in-out

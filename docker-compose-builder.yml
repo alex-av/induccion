@@ -1,0 +1,24 @@
+version: "3"
+services: 
+    prod:
+        container_name: frontend_builder
+        #restart: always
+        build: 
+            context: .
+            dockerfile: Dockerfileprod
+        command: yarn build #cd node_modules && ls #vue ui --host 0.0.0.0 --port 8000
+        ports:
+            - "3002:8080"
+            - "3003:8000"
+        #entrypoint: node
+        networks: 
+            - aula_builder
+
+        volumes:
+            - .:/usr/src/app/
+            - /usr/src/app//node_modules
+
+
+networks: 
+    aula_builder:
+        driver: bridge

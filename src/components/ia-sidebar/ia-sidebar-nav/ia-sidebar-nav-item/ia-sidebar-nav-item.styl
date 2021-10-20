@@ -1,0 +1,101 @@
+// Styles for ia-sidebar-nav-item
+.ia-menu-container-list__item
+    will-change transform
+    &.ia-item-selected
+      animation slide-izq 0.2s ease-out
+      button
+        &:hover
+          span
+            &::after
+              color white
+        span
+          &::after
+            animation slide-izq 0.4s ease-out
+            content '\F142'
+            color gris_menus
+            font-family iconos
+            position absolute
+            right 15px
+            font-size 30px
+            font-weight normal
+            bottom 5px
+    button
+      display block
+      width 100%
+      text-align left
+      font-weight bold
+      position relative
+      span
+        display block
+        padding-left 40px
+      & span::before
+        position absolute
+        margin-left -40px
+        font-size 24px
+      &:hover
+        color #fff
+        span
+          &::before
+            color white
+            font-weight normal
+  // Items 1
+.list__item-1
+
+    &.ia-item-selected
+      border-color conozcamos_la_utp
+      color conozcamos_la_utp
+    button
+      &:hover
+        background-color conozcamos_la_utp
+      span
+        &::before
+          content icono_conozcamos_la_utp
+          font-family iconos
+          color conozcamos_la_utp
+          top 5px
+          font-weight normal
+  // Items 2
+.list__item-2
+    &.ia-item-selected
+      border-color como_me_relaciono_utp
+      color como_me_relaciono_utp
+    button
+      &:hover
+        background-color como_me_relaciono_utp
+      span
+        &::before
+          content icono_como_me_relaciono_utp
+          font-family iconos
+          color como_me_relaciono_utp
+          top 5px
+          font-weight normal
+  // Items 3
+.list__item-3
+    &.ia-item-selected
+      border-color hago_parte_de_la_utp
+      color hago_parte_de_la_utp
+    button
+      &:hover
+        background-color hago_parte_de_la_utp
+      span
+        &::before
+          content icono_hago_parte_de_la_utp
+          font-family iconos
+          color hago_parte_de_la_utp
+          top 5px
+          font-weight normal
+  // Item 4
+.list__item-4
+    &.ia-item-selected
+      border-color hacia_donde_vamos
+      color hacia_donde_vamos
+    button
+      &:hover
+        background-color hacia_donde_vamos
+      span
+        &::before
+          content icono_hacia_donde_vamos
+          font-family iconos
+          color hacia_donde_vamos
+          top 5px
+          font-weight normal

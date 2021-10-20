@@ -1,0 +1,28 @@
+.ia-card-modal-cabecera
+    cursor pointer
+// Estilos del modal
+.ia-modal-container
+    background-color #fff
+.imagen-ia-card
+    position relative
+    &::before
+        content ''
+        opacity 0
+        transition opacity 0.2s ease-in-out
+    &:hover
+        text-align center
+        vertical-align middle
+        &::before
+            opacity 1
+            content '\F86B'
+            width 100%
+            height 100%
+            display block
+            position absolute
+            background-color rgba(0,184,147,0.6)
+            font-family iconos
+            top 0
+            left 0
+            box-sizing border-box
+            padding 30% 0
+            font-size 3.5em

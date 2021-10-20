@@ -1,0 +1,48 @@
+.box
+    will-change transform
+    width 211px
+    height 293px
+    transform-style preserve-3d
+    transform perspective(1000px)
+    display inline-block
+    margin 1em 0.5em
+    // O se puede usar la propiedad perspective 1000px
+    .card-container
+        transition transform 0.6s ease-in-out
+        width 100%
+        height 100%
+        transform rotateX(0deg)
+        border-radius 0.5em
+        transform-style preserve-3d
+        box-sizing border-box
+        transform-origin 50% 50% 0
+        .face
+            position absolute
+            border-radius 0.8em
+            box-shadow 0 1em 1em rgba(0,0,0,0.15)
+            background-size cover
+            text-align center
+            display flex
+            flex-wrap wrap
+            align-items center
+            &>div
+                padding 1em
+                width 100%
+
+        .front
+            width 100%
+            height 100%
+            transform rotateX(0deg)
+            background-color ocre_oro
+            backface-visibility hidden
+            font-weight bold
+
+        .back
+            width 100%
+            height 100%
+            background-color gris_desactivado
+            backface-visibility hidden
+            transform translateZ(1px) rotateX(-180deg)
+        
+    &:hover .card-container
+        transform scale(1.1, 1.1) rotateX(180deg)

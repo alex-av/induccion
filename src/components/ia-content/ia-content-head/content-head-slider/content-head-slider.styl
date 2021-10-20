@@ -1,0 +1,26 @@
+// Styles for content-head-slider
+ //border-radius al counter de la barra
+.v-progress-linear__determinate
+    border-radius 0px 5px 5px 0px
+
+ // Contenedor de la barra
+.v-slider--horizontal .v-slider__track-container
+    height 7px!important
+.v-slider--horizontal
+    margin 0
+
+.v-slider__thumb
+    width 15px
+    height 15px
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.19)
+    &:after
+        content ''
+        width 5px
+        height 5px
+        border-radius 100%
+        background-color verde_main
+        position absolute
+        transform translate(4px, 3px)
+
+.v-slider--horizontal
+    min-height 0

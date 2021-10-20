@@ -1,0 +1,139 @@
+// Styles for ia-sidebar-submenu-item
+
+
+
+// Init item
+.tema_conozcamos_la_utp
+  .ia-sidebar-container__menu-right--items
+    color conozcamos_la_utp
+    //Icono boton submenu
+    .ia-button-sub-style
+      span
+        &:before
+          content:icono_conozcamos_la_utp
+
+    //Cabecera  
+  .ia-sidebar-container__menu-right--topbar
+    h1
+      &::before
+        content icono_conozcamos_la_utp
+
+// fin item
+
+
+// Init item
+.tema_hacia_donde_vamos
+  .ia-sidebar-container__menu-right--items
+    color hacia_donde_vamos
+    //Icono boton submenu
+    .ia-button-sub-style
+      span
+        &:before
+          content:icono_hacia_donde_vamos
+    //Cabecera
+  .ia-sidebar-container__menu-right--topbar
+    h1
+      &::before
+        content icono_hacia_donde_vamos
+// fin item
+
+
+// Init item
+.tema_hago_parte_de_la_utp
+  .ia-sidebar-container__menu-right--items
+      color hago_parte_de_la_utp
+      //Icono boton submenu
+      .ia-button-sub-style
+        span
+          &:before
+            content:icono_hago_parte_de_la_utp
+
+  //Cabecera
+  .ia-sidebar-container__menu-right--topbar
+    h1
+      &::before
+        content icono_hago_parte_de_la_utp
+// fin item
+
+
+// Init item
+.tema_como_me_relaciono_utp
+  .ia-sidebar-container__menu-right--items
+      color como_me_relaciono_utp
+      //Icono boton submenu
+      .ia-button-sub-style
+        span
+          &:before
+            content:icono_como_me_relaciono_utp
+
+  //Cabecera
+  .ia-sidebar-container__menu-right--topbar
+    h1
+      &::before
+        content icono_como_me_relaciono_utp
+// Fin item
+
+
+// Item block
+.ia-sidebar-container__menu-right--items
+  position relative
+  top 145px
+
+  //Interacciones lista de menú
+  // Menú lateral derecho en Estado seleccionadio
+
+.ia-menu-container-list__item.ia-item-selected{
+    border-left 10px solid
+    border-color inherit
+}
+
+
+
+    // Items de sub menú
+.ia-button-sub-style
+    display block
+    background-color #fff
+    padding 12px 16px
+    text-align left
+    border-radius 8px
+    font-weight 500
+    box-shadow 0 10px 0 0px #ECEFF8
+    transition transform .2s ease-in-out
+    span
+        position relative
+        display block
+        padding-left 30px
+        color gris_iconos
+        &:before
+            content icono_conozcamos_la_utp
+            font-family iconos
+            font-size 1.3em
+            display block
+            position absolute
+            top -5px
+            margin-left -30px
+            font-weight normal
+            color gris_iconos
+    &:focus
+        border none
+        outline none
+.menu-right-item
+  animation aparecerBtn 0.3s ease-out
+.menu-right-item.ia-item-selected
+  //before de la flecha del botón
+  &:before
+      content '\F054' // Icono flecha
+      position absolute
+      left -40px
+      top 3px
+      color white
+      font-family iconos
+      font-size 2em
+      animation slide-izq 0.4s ease-in-out forwards
+
+  span
+      color inherit
+      &:before
+          color inherit
+  position relative
+  transform: translateX(40px)

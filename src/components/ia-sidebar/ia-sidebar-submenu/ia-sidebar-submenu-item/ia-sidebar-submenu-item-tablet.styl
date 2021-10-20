@@ -1,0 +1,56 @@
+// ia-sidebar-submenu-item tablet styles
+@media screen and (max-width 960px) and (min-width 600px)
+    // Items de sub menú
+    .ia-button-sub-style
+        display inline-block
+        background-color transparent
+        padding 5px 5px
+        text-align center
+        border-radius unset
+        font-weight 500
+        box-shadow none
+        transition transform .2s ease-in-out
+        min-width 120px
+        max-width 120px
+        font-size 0.8em
+        height 80px
+
+        span
+            position relative
+            display block
+            padding-left 0px
+            color gris_iconos
+            &:before
+                content icono_conozcamos_la_utp
+                font-size 1.3em
+                display block
+                position relative
+                top 0px
+                text-align center
+                margin-left auto
+                margin-right auto
+                font-weight normal
+                color gris_iconos
+        &:focus
+            border none
+            outline none
+    .menu-right-item
+        animation none
+    .menu-right-item.ia-item-selected
+        //before de la flecha del botón
+        &:before
+            content '' // Icono flecha
+            position absolute
+            left -40px
+            top 3px
+            color white
+            font-family iconos
+            font-size 2em
+            animation none
+
+        span
+            color inherit
+            &:before
+                color inherit
+        position relative
+        transform: translateX(0)

@@ -1,0 +1,35 @@
+// Styles for ia-view-home-video
+.ia-view-home-video
+    .iframe-container
+        position: relative;
+        padding-bottom: 56.25% /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+
+        iframe
+            position: absolute;
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            border-radius 0.2em 
+
+    .ia-view-button
+        text-align center
+        a
+            background-color verde_main
+            color #fff
+            text-decoration none
+            display inline-block
+            padding 0.5em 1em
+            border-radius 0.4em
+            box-shadow 0 0.7em 0 0em #018c70
+            font-weight bold
+
+        /*RATIOS*/
+        /*
+        Aspect Ratio	Padding-Bottom
+        1:1	100%
+        16:9	56.25%
+        4:3	75%
+        3:2	66.66%
+        8:5	62.5%
+        */

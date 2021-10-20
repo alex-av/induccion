@@ -1,0 +1,27 @@
+ // ia-sidebar-submenu-item laptop styles
+ @media screen and (max-width 1267px) and (min-width 960px)
+    .menu-right-item.ia-item-selected
+        position relative
+        margin-right 30px
+        display flex
+        align-items center
+
+        //before de la flecha del botón
+        &:before
+            content '\F054' // Icono flecha
+            position relative
+            left -40px
+            top 3px
+            color white
+            font-family iconos
+            font-size 1.8em
+            animation slide-izq 0.4s ease-in-out forwards
+
+        span
+            color inherit
+            margin-left 0
+            left -20px
+            &:before
+                color inherit
+        position relative
+        transform: translateX(20px)

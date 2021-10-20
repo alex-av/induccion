@@ -1,0 +1,39 @@
+.contenedor
+    position relative
+    width 800px;
+    .imagen-container
+        margin auto
+    .zona
+        display inline-block
+        width 100px
+        height 100px
+        background-color #000
+        position absolute
+        border-radius 50%
+        opacity 0
+        cursor pointer  
+        &:hover
+            background-color rgba(248, 51, 62, 0.34)
+            border 1em solid #FC2734;
+            opacity 1
+    .zona1
+        transform translate(44.3em, -12.3em)
+    .zona2
+        transform translate(29.6em, -12.3em)
+    .zona3
+        transform translate(14.9em, -12.3em)
+
+// Modal
+.background-base
+    background-color #fff
+.ia-modal-header
+    border-bottom 1px solid gris_fondos
+.ul-list-modal
+    list-style none
+    li
+        &::before
+            content '\FE6E'
+            font-family iconos
+            position absolute
+            transform translateX(-1.5em)
+            color verde_main

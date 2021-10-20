@@ -1,0 +1,486 @@
+// fira
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap')
+// open
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+// importo variables
+@import 'stylus/ia_variables'
+*{
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+}
+//tags
+h1, h2, h3, h4, h5, h6
+    font-family titulos
+    color titulos_principales
+//.__mod_font.v-application
+    //font-family principal
+.theme--light.v-application
+    color gris
+body,html
+    width 100%
+    height 100%
+    font-size 14px //Tamaño base de fuente
+
+.main
+    width 100%
+    height 100%
+
+.ia-h-100
+    height 100%
+
+// Clases temas
+// .tema_conozcamos_la_utp
+
+// Uls y Ols
+// Ul / Ol Horizontal
+.v-application ul.ia-list, .v-application ol.ia-list
+    list-style-type: none
+    padding 0
+
+
+.ia-list.ia-list-h
+    display: flex
+    justify-content space-between
+    li
+        flex-grow 1
+        text-align left
+        border-right-width 1px
+        border-right-color gris_desactivado
+        border-right-style solid
+
+
+
+
+// Clases de padding general
+    //40px
+.ia-padding-t-40
+    padding-top 40px
+
+.ia-padding-b-40
+    padding-bottom 40px
+
+.ia-padding-l-40
+    padding-left 40px
+
+.ia-padding-r-40
+    padding-right 40px
+
+.ia-padding-x-40
+    padding-right 40px
+    padding-left 40px
+
+.ia-padding-y-40
+    padding-top 40px
+    padding-bottom 40px
+
+    //30px
+.ia-padding-l-30
+    padding-left 30px
+
+.ia-padding-r-30
+    padding-right 30px
+
+.ia-padding-x-30
+    padding-right 30px
+    padding-left 30px
+
+.ia-padding-y-30
+    padding-top 30px
+    padding-bottom 30px
+
+.ia-padding-t-30
+    padding-top 30px
+
+.ia-padding-b-30
+    padding-bottom 30px
+
+    //25px
+
+.ia-padding-t-25
+    padding-top 25px
+
+.ia-padding-b-25
+    padding-bottom 25px
+
+.ia-padding-l-25
+    padding-left 25px
+
+.ia-padding-r-25
+    padding-right 25px
+
+.ia-padding-x-25
+    padding-right 25px
+    padding-left 25px
+
+.ia-padding-y-25
+    padding-top 25px
+    padding-bottom 25px
+
+    //20px
+
+.ia-padding-t-20
+    padding-top 20px
+
+.ia-padding-b-20
+    padding-bottom 20px
+
+.ia-padding-l-20
+    padding-left 20px
+
+.ia-padding-r-20
+    padding-right 20px
+
+.ia-padding-x-20
+    padding-right 20px
+    padding-left 20px
+
+.ia-padding-y-20
+    padding-top 20px
+    padding-bottom 20px
+
+    //15px
+
+.ia-padding-t-15
+    padding-top 15px
+
+.ia-padding-b-15
+    padding-bottom 15px
+
+.ia-padding-l-15
+    padding-left 15px
+
+.ia-padding-r-15
+    padding-right 15px
+
+.ia-padding-x-15
+    padding-right 15px
+    padding-left 15px
+
+.ia-padding-y-15
+    padding-top 15px
+    padding-bottom 15px
+
+    //10px
+.ia-padding-t-10
+    padding-top 10px
+
+.ia-padding-b-10
+    padding-bottom 10px
+
+.ia-padding-l-10
+    padding-left 10px
+
+.ia-padding-r-10
+    padding-right 10px
+
+.ia-padding-x-10
+    padding-right 10px
+    padding-left 10px
+
+.ia-padding-y-10
+    padding-top 10px
+    padding-bottom 10px
+
+    //5px
+.ia-padding-t-5
+    padding-top 5px
+
+.ia-padding-b-5
+    padding-bottom 5px
+
+.ia-padding-l-5
+    padding-left 5px
+
+.ia-padding-r-5
+    padding-right 5px
+
+.ia-padding-x-5
+    padding-right 5px
+    padding-left 5px
+
+.ia-padding-y-5
+    padding-top 5px
+    padding-bottom 5px
+
+
+// margin 
+
+// margin 40px
+.ia-margin-t-40
+    margin-top 40px
+
+.ia-margin-b-40
+    margin-bottom 40px
+
+.ia-margin-l-40
+    margin-left 40px
+
+.ia-margin-r-40
+    margin-right 40px
+
+.ia-margin-x-40
+    margin-right 40px
+    margin-left 40px
+
+.ia-margin-y-40
+    margin-top 40px
+    margin-bottom 40px
+
+// margin 30px
+
+.ia-margin-t-30
+    margin-top 30px
+
+.ia-margin-b-30
+    margin-bottom 30px
+
+.ia-margin-l-30
+    margin-left 30px
+
+.ia-margin-r-30
+    margin-right 30px
+
+.ia-margin-x-30
+    margin-right 30px
+    margin-left 30px
+
+.ia-margin-y-30
+    margin-top 30px
+    margin-bottom 30px
+
+// margin 25px
+
+.ia-margin-t-25
+    margin-top 25px
+
+.ia-margin-b-25
+    margin-bottom 25px
+
+.ia-margin-l-25
+    margin-left 25px
+
+.ia-margin-r-25
+    margin-right 25px
+
+.ia-margin-x-25
+    margin-right 25px
+    margin-left 25px
+
+.ia-margin-y-25
+    margin-top 25px
+    margin-bottom 25px
+
+// margin 20px
+
+.ia-margin-t-20
+    margin-top 20px
+
+.ia-margin-b-20
+    margin-bottom 20px
+
+.ia-margin-l-20
+    margin-left 20px
+
+.ia-margin-r-20
+    margin-right 20px
+
+.ia-margin-x-20
+    margin-right 20px
+    margin-left 20px
+
+.ia-margin-y-20
+    margin-top 20px
+    margin-bottom 20px
+
+// margin 15px
+
+.ia-margin-t-15
+    margin-top 15px
+
+.ia-margin-b-15
+    margin-bottom 15px
+
+.ia-margin-l-15
+    margin-left 15px
+
+.ia-margin-r-15
+    margin-right 15px
+
+.ia-margin-x-15
+    margin-right 15px
+    margin-left 15px
+
+.ia-margin-y-15
+    margin-top 15px
+    margin-bottom 15px
+
+// margin 10px
+
+.ia-margin-t-10
+    margin-top 10px
+
+.ia-margin-b-10
+    margin-bottom 10px
+
+.ia-margin-l-10
+    margin-left 10px
+
+.ia-margin-r-10
+    margin-right 10px
+
+.ia-margin-x-10
+    margin-right 10px
+    margin-left 10px
+
+.ia-margin-y-10
+    margin-top 10px
+    margin-bottom 10px
+
+// margin 5px
+
+.ia-margin-t-5
+    margin-top 5px
+
+.ia-margin-b-5
+    margin-bottom 5px
+
+.ia-margin-l-5
+    margin-left 5px
+
+.ia-margin-r-5
+    margin-right 5px
+
+.ia-margin-x-5
+    margin-right 5px
+    margin-left 5px
+
+.ia-margin-y-5
+    margin-top 5px
+    margin-bottom 5px
+
+//Ajustes al tema
+
+
+.itemresaltado
+    color azul_fondo
+    font-weight bold
+
+.ia-divisor
+    border-bottom: 0.020em solid gris_bars
+    margin 1em 0
+.img-fluid
+    display block
+    width auto
+    max-width 100%
+    height auto
+
+ul.list-clean
+    list-style none
+    margin 0
+    padding-left 0
+    li
+        margin 0
+        padding 0
+        i
+            color verde_main
+.informacion ul.list-clean
+    padding-left 0
+
+
+.ia-block
+    img
+        max-width 100%;
+        height auto
+.color-facebbok
+    color #3F51B5 !important
+.color-instagram
+    color #E1306C !important
+.color-youtube
+    color #E53935 !important
+.color-twitter
+    color #2196F3 !important
+.color-emisora
+    color verde_main !important
+.color-directorio
+    color verde_main !important
+.color-suscripcion
+    color verde_main !important
+
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.foto-base
+    display inline-block
+    background-color verde_main
+    width 300px
+    height 300px
+
+.contact-icon
+    line-height 0
+    font-size 1.5em
+    position relative
+    display inline-block
+    color verde_main
+    transform translateY(0.2em)
+.v-application a.ia-btn-link, .v-application a.ia-btn-attachment
+    background-color verde_main
+    color #fff
+    display inline-block
+    padding 0.6em 1.5em 0.6em 3em
+    text-decoration none
+    border-radius 0.4em
+    font-weight bold
+    position relative
+    cursor pointer
+    transition all 0.4s ease-in-out
+    box-shadow 0 0.8em 0 0em #10a98a
+    margin-bottom 0.8em 
+    &::before
+        content '\F337'
+        position absolute
+        font-family iconos
+        transform translate(-1.5em, -0.2em)
+        font-size 1.2em
+    &:hover
+        background-color gris_h5
+        box-shadow 0 0.8em 0 0em #354d58
+
+
+.v-application a.ia-btn-attachment
+    background-color verde_main
+    &::before
+        content '\F066'
+
+
+    span
+        color #fff
+.ia-video-btn
+    border 2px solid gris_h5
+    display inline-block
+    padding-right 1em
+    border-radius 0.4em
+    cursor pointer
+    font-weight bold
+    i
+        font-size 1.4em
+        line-height 0
+        transform translateY(0.2em)
+        position relative
+        display inline-block
+
+.ia-border-btn
+    border 2px solid verde_main
+    padding-right 1em
+    border-radius 0.4em

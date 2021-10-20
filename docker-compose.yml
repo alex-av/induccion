@@ -1,0 +1,21 @@
+version: "3"
+services: 
+    dev:
+        container_name: frontend_dev
+        restart: always
+        build: .
+        ports:
+            - "3000:8080"
+            - "3001:8000"
+        volumes:
+            - ./src:/usr/src/app/src
+            - ./dist:/usr/src/app/dist
+            - ./dev:/usr/src/app/dev
+        # entrypoint: yarn serve
+        command: yarn serve #cd node_modules && ls #vue ui --host 0.0.0.0 --port 8000
+        networks: 
+            - aula_development
+
+networks: 
+    aula_development:
+        driver: bridge

@@ -1,0 +1,249 @@
+// Styles for content-body-activities
+// Se sobreescribe la clase info
+.env
+    padding 1em 0 2em 0
+    select,.custom-select
+        padding 0.2em
+
+
+.v-application .v-dialog div.info
+    background-color #fff !important
+    padding-left 1em
+    padding-top 1em
+    padding-bottom 1em
+    margin-bottom 1em
+    margin-top 1em
+    border-bottom 1px dashed verde_main !important
+    display flex
+    justify-content space-between
+
+
+    &:after
+        content "✅ Necesitas mínimo 4 puntos para aprobar"
+        position absolute
+        transform translateY(2.7em)
+        font-size 1.3em
+        color verde_main
+        background-color #00B89330
+        font-weight bold
+        display inline-block
+        padding 0.2em 0.6em
+        border-radius 0.2em
+
+
+    h3.no
+        color: violeta_titulos
+        padding 0
+        flex-grow 7
+        font-size 1.4em
+    // texto que dice si ha finalizado o no
+    .state
+        
+        margin-right 1em
+        display none
+
+
+    .state,.grade
+        font-size 1.3em
+        font-weight lighter
+
+    .grade
+        &::before
+            content 'Esta pregunta '
+
+    // texto de la pregunta
+.qtext
+    margin-top 3em
+    padding-left 1em
+
+    h3
+        font-size 1.5em
+        padding-top 1em
+        padding-bottom 1em
+
+    h4, p
+        color gris_textos
+        font-size 1.3em
+    p
+        font-weight lighter
+
+    // select container
+    span.control.group1
+        border 1px solid verde_main
+        margin 0.2em
+        border-radius 0.2em
+        display inline-block
+        &::after
+            content '\F140'
+            font-family iconos
+            color verde_main
+            position relative
+            display inline-block
+            transform translateY(0.25em)
+
+
+
+.qtype_multichoice_clearchoice
+    display none
+
+
+.prompt
+    margin 1em 0
+    font-size 1.3em
+    font-weight lighter
+    color gris_textos
+
+.answer
+    font-size 1.3em
+    font-weight lighter
+    > div
+        padding-top 0.7em
+        padding-bottom 0.7em
+        border-bottom 1px dashed gris_fondos
+        span 
+            color gris_textos !important
+
+.ablock
+    padding-left 1em
+    table
+        td
+            max-width 640px
+            padding-top 1.5em
+            padding-bottom .5em
+            border-bottom 1px dashed gris_fondos
+        label.accesshide
+            position absolute
+            color gris_textos
+        select
+            border 1px solid verde_main
+            width 100%
+            border-radius 0.2em
+            transform translateY(-.5em)            
+
+.im-controls
+    display none
+
+//botones
+button.env.siguiente
+    margin-left 1em
+    span
+        color #fff
+
+// boton enviar
+
+//sobreescritura de clases
+
+button.env.enviar
+    color #fff
+    border-radius 50%
+    margin-top 3em
+    margin-bottom 3em
+    margin-left auto
+    margin-right auto
+    display block
+
+.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined)
+    background-color verde_main 
+
+    
+.v-btn:not(.v-btn--round).v-size--default.enviar
+    width 160px
+    box-sizing border-box
+    height 160px
+    padding 4em 0 0 0
+    span.v-btn__content
+        
+        text-align center
+
+        i
+            font-size 3em
+            display inline-block
+            transform translateY(-.9em) translateX(-.1em)
+        p
+            font-weight bolder
+            font-size 1.3em
+        display block
+
+
+//
+.text
+    button.repetir
+        display block
+        margin auto
+        background-color rojo_principal
+        span
+            color #fff
+
+//Modal
+.modal-actividad
+    box-sizing border-box
+    box-shadow: 0 0 6px 0px rgba(0,0,0,0.1)
+
+.v-dialog .titulo-actividad
+    h2
+        color verde_main
+        font-size 1em
+        padding-left 1em
+
+.v-dialog .boton-cerrar-actividad
+    position absolute
+    right 1em
+    top 1em
+
+.v-dialog .titulo-actividad
+    position relative
+    top 0.5em
+
+
+//puntaje
+
+.v-dialog div .actividad-puntaje
+    text-align center
+    font-size 3em
+    font-weight bold
+
+//feedback
+div.feedback
+    text-align center
+    .aviso>span,i
+        text-transform uppercase
+        font-weight bold
+        font-size 2em
+    .aviso
+        p.aviso-frase
+            font-size 1.4em
+            font-weight lighter
+            color gris_textos
+            padding-top 1em
+            padding-bottom 1em
+.text
+    .actividad-puntaje
+        .tu-puntaje
+            color gris_textos 
+            font-size 0.6em
+    .valor-nota
+        color gris_textos
+        margin-bottom .5em
+
+div.feedback.actividad-repetir
+
+    .aviso>span,i
+        color rojo_principal
+
+div.feedback.actividad-aprobada
+
+    .aviso>span,i
+        color verde_main
+
+
+@media screen and (max-width 600px)
+    .modal-actividad // Clase que se determinó para el componente modal
+        width auto
+
+@media screen and (min-width 1180px)
+    .modal-actividad
+        width 70%
+
+
+// Se trabaja sobre los elementos generados de moodle
+
